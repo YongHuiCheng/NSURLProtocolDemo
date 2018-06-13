@@ -2,7 +2,7 @@
 //  AppDelegate.h
 //  NSURLProtocolDemo
 //
-//  Created by 许伟杰 on 2018/6/13.
+//  Created by JackXu on 2018/6/13.
 //  Copyright © 2018年 JackXu. All rights reserved.
 //
 

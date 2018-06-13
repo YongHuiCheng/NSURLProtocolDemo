@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  JXURLProtocol.h
 //  NSURLProtocolDemo
 //
 //  Created by JackXu on 2018/6/13.
 //  Copyright © 2018年 JackXu. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface ViewController : UIViewController
-
+@interface JXURLProtocol : NSURLProtocol
 
 @end
-

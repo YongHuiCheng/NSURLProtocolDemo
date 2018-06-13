@@ -13,6 +13,8 @@
 		5D6C537320D0FBB100FF45F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D6C537220D0FBB100FF45F7 /* Assets.xcassets */; };
 		5D6C537620D0FBB100FF45F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D6C537420D0FBB100FF45F7 /* LaunchScreen.storyboard */; };
 		5D6C537920D0FBB100FF45F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6C537820D0FBB100FF45F7 /* main.m */; };
+		5D6C538120D0FBFF00FF45F7 /* JXURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6C538020D0FBFF00FF45F7 /* JXURLProtocol.m */; };
+		5D6C538320D1045000FF45F7 /* long.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D6C538220D1045000FF45F7 /* long.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		5D6C537520D0FBB100FF45F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D6C537720D0FBB100FF45F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D6C537820D0FBB100FF45F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5D6C537F20D0FBFF00FF45F7 /* JXURLProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JXURLProtocol.h; sourceTree = "<group>"; };
+		5D6C538020D0FBFF00FF45F7 /* JXURLProtocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JXURLProtocol.m; sourceTree = "<group>"; };
+		5D6C538220D1045000FF45F7 /* long.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = long.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,9 @@
 		5D6C536820D0FBB000FF45F7 /* NSURLProtocolDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5D6C538220D1045000FF45F7 /* long.png */,
+				5D6C537F20D0FBFF00FF45F7 /* JXURLProtocol.h */,
+				5D6C538020D0FBFF00FF45F7 /* JXURLProtocol.m */,
 				5D6C536920D0FBB000FF45F7 /* AppDelegate.h */,
 				5D6C536A20D0FBB000FF45F7 /* AppDelegate.m */,
 				5D6C536C20D0FBB000FF45F7 /* ViewController.h */,
@@ -131,6 +139,7 @@
 				5D6C537620D0FBB100FF45F7 /* LaunchScreen.storyboard in Resources */,
 				5D6C537320D0FBB100FF45F7 /* Assets.xcassets in Resources */,
 				5D6C537120D0FBB000FF45F7 /* Main.storyboard in Resources */,
+				5D6C538320D1045000FF45F7 /* long.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D6C536E20D0FBB000FF45F7 /* ViewController.m in Sources */,
+				5D6C538120D0FBFF00FF45F7 /* JXURLProtocol.m in Sources */,
 				5D6C537920D0FBB100FF45F7 /* main.m in Sources */,
 				5D6C536B20D0FBB000FF45F7 /* AppDelegate.m in Sources */,
 			);

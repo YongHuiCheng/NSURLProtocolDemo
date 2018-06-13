@@ -2,13 +2,16 @@
 //  ViewController.m
 //  NSURLProtocolDemo
 //
-//  Created by 许伟杰 on 2018/6/13.
+//  Created by JackXu on 2018/6/13.
 //  Copyright © 2018年 JackXu. All rights reserved.
 //
 
 #import "ViewController.h"
+#import "JXURLProtocol.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
 
 @end
 
@@ -16,13 +19,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [NSURLProtocol registerClass:[JXURLProtocol class]];
+
+    [self loadWeb];
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)loadWeb {
+    NSURL *url = [NSURL URLWithString:@"https://www.baidu.com"];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    [self.webView loadRequest:request];
 }
 
 
