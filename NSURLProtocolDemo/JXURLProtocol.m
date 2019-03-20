@@ -7,7 +7,8 @@
 //
 
 #import "JXURLProtocol.h"
-
+//百度首页的图片地址可能会变，如果小恐龙不出去，请登陆m.baidu.com查看图片真实地址并替换
+#define logoUrl @"https://m.baidu.com/static/index/plus/plus_logo_web.png"
 @implementation JXURLProtocol
 
 //所有请求
@@ -20,7 +21,7 @@
         return NO;
     }
     
-    if ([urlString isEqualToString:@"https://m.baidu.com/static/index/plus/plus_logo.png"]) {
+    if ([urlString isEqualToString:logoUrl]) {
         return YES;
     }
     return NO;
@@ -46,7 +47,7 @@
         [self.client URLProtocol:self didLoadData:imageData];
         [self.client URLProtocolDidFinishLoading:self];
     }else{
-        [NSURLProtocol setProperty:@(YES) forKey:@"JXProtocol" inRequest:self.request];
+        [NSURLProtocol setProperty:@(YES) forKey:@"JXProtocol" inRequest:[self.request copy]];
         NSMutableURLRequest *newRequset = [self.request mutableCopy];
         NSURLSessionConfiguration *config = [NSURLSessionConfiguration ephemeralSessionConfiguration];
         NSURLSession *session = [NSURLSession sessionWithConfiguration:config delegate:self delegateQueue:[NSOperationQueue mainQueue]];
@@ -56,7 +57,7 @@
 }
 
 - (NSData*)imageDataWithUrl:(NSURL*)url{
-    if ([url.absoluteString isEqualToString:@"https://m.baidu.com/static/index/plus/plus_logo.png"]) {
+    if ([url.absoluteString isEqualToString:logoUrl]) {
         NSString *filePath = [[NSBundle mainBundle] pathForResource:@"long" ofType:@"png"];
         NSData *data = [NSData dataWithContentsOfFile:filePath];
         return data;
